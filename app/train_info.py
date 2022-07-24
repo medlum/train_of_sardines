@@ -8,7 +8,7 @@ trainline = {" " : " ", "Circle Line" : "CCL",
             "North South Line" : "NSL",
             "Bukit Panjang LRT" : "BPL",
             "Sengkang LRT" : "SLRT",
-            "Punngol" : "PLRT"}
+            "Punggol" : "PLRT"}
 
 
 traindict = {'NS1': ['Jurong East', 'North-South Line'], 

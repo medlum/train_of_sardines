@@ -10,6 +10,7 @@ import datetime, time
 st.set_page_config(
     page_title='Train of Sardines',
     page_icon=':train:',
+    layout="wide",
     menu_items={"About":"Data is updated on a 10 min interval"}
 )
 
