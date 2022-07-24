@@ -5,7 +5,8 @@ trainline = {" " : " ", "Circle Line" : "CCL",
             "Downtown Line" : "DTL",
             "East West Line" : "EWL",
             "North East Line" : "NEL",
-            "North South Line" : "NSL"}
+            "North South Line" : "NSL",
+            "Thomson-East Coast Line" : "TEL"}
             #"Bukit Panjang LRT" : "BPL",
             #"Sengkang LRT" : "SLRT",
             #"Punggol" : "PLRT"}
