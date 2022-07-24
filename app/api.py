@@ -39,7 +39,7 @@ def api_call(select):
                     info["CrowdLevel"] = "\U0001F937 Check Later"
 
             with st.container():
-                c1, c2 = st.columns((1, 1))
+                c1, c2 = st.columns((1, 4))
                 with c1:
                     
                     st.write("\U0001F686",info["Station"])
