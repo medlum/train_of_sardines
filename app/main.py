@@ -26,3 +26,5 @@ if select in trainline.keys():
     api_call(select)
 
 st.text("Data is updated on a 10 min interval from https://datamall.lta.gov.sg")
+
+
