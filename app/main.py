@@ -11,6 +11,7 @@ st.set_page_config(
     page_title='Train of Sardines',
     page_icon=':train:',
     layout="centered",
+    initial_sidebar_state="expanded",
     menu_items={"About":"Data is updated on a 10 min interval"}
 )
 
@@ -21,7 +22,7 @@ now_modifed = str(now_dt + datetime.timedelta(hours=8))
 st.write(now_modifed)
 #st.write(f"Date and Time: {currentdate()}")
 
-select = st.selectbox("CHECK IT OUT!", list(trainline.keys()))
+select = st.sidebar.selectbox("CHECK IT OUT!", list(trainline.keys()))
 if select in trainline.keys():
     api_call(select)
 
