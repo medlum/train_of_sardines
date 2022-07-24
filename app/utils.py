@@ -1,6 +1,13 @@
-import re   
+import re, datetime, time   
 import streamlit as st
 import base64
+
+
+def currentdate():
+
+    now_dt = datetime.datetime.today().replace(microsecond=0)
+    now_modifed = str(now_dt + datetime.timedelta(hours=8))
+    return now_modifed
 
 def head():
     st.markdown("""
@@ -19,7 +26,7 @@ def head():
     # U0001F41F
     st.write("""
         <p style="font-size:25px";'text-align: center'>
-        How packed are the trains today?
+        Are the trains packed?
         </p>
     """, unsafe_allow_html=True
              )
