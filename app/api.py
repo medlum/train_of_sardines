@@ -12,7 +12,7 @@ import datetime, time
 def api_call(select):
     lta_url = "http://datamall2.mytransport.sg/ltaodataservice/PCDRealTime?TrainLine="
 
-    headers = {"AccountKey": "DThSMrZZSdmUQjrFCDt3Ew==",
+    headers = {"AccountKey":  st.secrets["LTA_APIKEY"],
                "accept": "application/json"}
 
     if select in list(trainline.keys())[1:]:
