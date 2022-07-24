@@ -23,6 +23,7 @@ def api_call(select):
         data = response.json()
         #st.write(data["value"])
         crowd_data = sortkey(data["value"])
+        
         for info in crowd_data:
             if info["Station"] in traindict.keys():
                 line = traindict.get(info["Station"])
@@ -43,5 +44,5 @@ def api_call(select):
                     st.write("\U0001F686",info["Station"])
                 with c2:
                 
-                    st.write(info["CrowdLevel"]-)
+                    st.write(info["CrowdLevel"])
 
