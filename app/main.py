@@ -23,7 +23,6 @@ st.write(now_modifed)
 
 select = st.selectbox("CHECK IT OUT!", list(trainline.keys()))
 if select in trainline.keys():
-    with st.container():
-        api_call(select)
+    api_call(select)
 
 st.text("Data is updated on a 10 min interval from https://datamall.lta.gov.sg")

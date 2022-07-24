@@ -38,12 +38,13 @@ def api_call(select):
                 else:
                     info["CrowdLevel"] = "\U0001F937 Check Later"
 
-            c1, c2 = st.columns((1, 1))
-            with c1:
+            with st.container():
+                c1, c2 = st.columns((1, 1))
+                with c1:
+                    
+                    st.write("\U0001F686",info["Station"])
+                with c2:
                 
-                st.write("\U0001F686",info["Station"])
-            with c2:
-               
-                st.write(info["CrowdLevel"])
+                    st.write(info["CrowdLevel"])
 
 
